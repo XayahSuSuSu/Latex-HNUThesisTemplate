@@ -1,0 +1,107 @@
+\RequirePackage{pkgs/font}
+\RequirePackage{tabularx}
+\RequirePackage{booktabs}
+
+\input{docs/cover}
+
+\newcommand\contentLenght{7.5cm}
+\newcommand\contentVerticalSpace{1.3em}
+
+\newcommand{\createCover}{
+    \begin{titlepage}
+
+    \begin{figure}
+    \centering
+    \includegraphics[width=9.49cm]{pkgs/imgs/hnu_logo_bkg}
+    \end{figure}
+
+    \begin{figure}
+    \centering
+    \vspace{-9.49cm}
+    \includegraphics[width=8.01cm, height=2.58cm]{pkgs/imgs/hnu_logo}
+    \end{figure}
+
+    \centering
+    \makebox[0pt][c]{
+        \raisebox{-1cm}[0pt][0pt]{
+            \sizeOne {
+                \fontCourierPSBold HUNAN UNIVERSITY
+            }
+        }
+    }
+
+    \makebox[0pt][c]{
+        \raisebox{-3.2cm}[0pt][0pt]{
+            \fontsize{45pt}{0}\selectfont {
+                \fontSimsun 本科生毕业论文\fontTimesNewRoman \hspace{0pt}(\fontSimsun 设计\fontTimesNewRoman )\hspace{0pt}
+            }
+        }
+    }
+
+    \makebox[0pt][c]{
+        \raisebox{-9cm}[0pt][0pt]{
+            \begin{tabular}{r l}
+            {\sizeTwol {
+                \fontSimheiBold 论文\fontTimesNewRoman \hspace{0pt} (\fontSimheiBold 设计\fontTimesNewRoman )\hspace{0pt}\fontSimheiBold 题目：
+            }} & {\sizeThreel {
+                \fontSimsun\fontTimesNewRoman\underline{\makebox[\contentLenght][c]{
+                    \thesisTitle
+                }}
+            }} \\
+            \specialrule{0em}{\contentVerticalSpace}{0pt}
+            {\sizeFour {
+                \fontSimhei 学~生~姓~名：
+            }} & {\sizeThreel {
+                \fontSimsun\fontTimesNewRoman\underline{\makebox[\contentLenght][c]{
+                    \studentName
+                }}
+            }}  \\
+            \specialrule{0em}{\contentVerticalSpace}{0pt}
+            {\sizeFour {
+                \fontSimhei 学~生~学~号：
+            }} & {\sizeThreel {
+                \fontSimsun\fontTimesNewRoman\underline{\makebox[7.5cm][c]{
+                    \studentID
+                }}
+            }}  \\
+            \specialrule{0em}{\contentVerticalSpace}{0pt}
+            {\sizeFour {
+                \fontSimhei 专~业~班~级：
+            }} & {\sizeThreel {
+                \fontSimsun\fontTimesNewRoman\underline{\makebox[\contentLenght][c]{
+                    \studentCls
+                }}
+            }}  \\
+            \specialrule{0em}{\contentVerticalSpace}{0pt}
+            {\sizeFour {
+                \fontSimhei 学~院~名~称：
+            }} & {\sizeThreel {
+                \fontSimsun\fontTimesNewRoman\underline{\makebox[\contentLenght][c]{
+                    \studentAcademy
+                }}
+            }}  \\
+            \specialrule{0em}{\contentVerticalSpace}{0pt}
+            {\sizeFour {
+                \fontSimhei 指~导~老~师：
+            }} & {\sizeThreel {
+                \fontSimsun\fontTimesNewRoman\underline{\makebox[\contentLenght][c]{
+                    \studentInstructor
+                }}
+            }}  \\
+            \end{tabular}
+        }
+    }
+
+    \makebox[0pt][c]{
+        \raisebox{-15cm}[0pt][0pt]{
+            \sizeFour{
+                \fontSimhei \fontTimesNewRoman {
+                    \thesisDate
+                }
+            }
+        }
+    }
+
+
+    \end{titlepage}
+}
