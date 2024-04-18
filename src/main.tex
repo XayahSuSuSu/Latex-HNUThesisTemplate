@@ -4,21 +4,14 @@
 % Packages
 \usepackage{amsmath}
 \usepackage{graphicx}
-\usepackage{geometry}
 \usepackage{overpic}
 \usepackage{fontspec}
 \usepackage{pkgs/cover}
-
-% 上边距：30mm；下边距：25mm；左边距：30mm；右边距：20mm；行间距为1.5倍行距。
-\geometry{
-    top=30mm,
-    bottom=25mm,
-    left=30mm,
-    right=20mm,
-}
+\usepackage{pkgs/copyright}
 
 % Document
 \begin{document}
-    \frontmatter
     \createCover
+    \frontmatter
+    \createCopyright
 \end{document}
