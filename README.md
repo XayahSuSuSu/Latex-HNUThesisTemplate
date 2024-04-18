@@ -8,6 +8,7 @@
 ## 图例
 <div align="center">
 	<img src="./src/pkgs/imgs/screenshot_1.png" width="400px"><img src="./src/pkgs/imgs/screenshot_2.png" width="400px">
+	<img src="./src/pkgs/imgs/screenshot_3.png" width="400px"><img src="./src/pkgs/imgs/screenshot_4.png" width="400px">
 </div>
 
 ## 使用
