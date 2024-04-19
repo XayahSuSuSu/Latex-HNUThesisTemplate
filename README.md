@@ -7,8 +7,11 @@
 
 ## 图例
 <div align="center">
-	<img src="./src/pkgs/imgs/screenshot_1.png" width="400px"><img src="./src/pkgs/imgs/screenshot_2.png" width="400px">
-	<img src="./src/pkgs/imgs/screenshot_3.png" width="400px"><img src="./src/pkgs/imgs/screenshot_4.png" width="400px">
+	<img src="./src/pkgs/imgs/screenshot_1.png" width="275px"><img src="./src/pkgs/imgs/screenshot_2.png" width="275px"><img src="./src/pkgs/imgs/screenshot_3.png" width="275px">
+	<img src="./src/pkgs/imgs/screenshot_4.png" width="275px"><img src="./src/pkgs/imgs/screenshot_5.png" width="275px"><img src="./src/pkgs/imgs/screenshot_6.png" width="275px">
+	<img src="./src/pkgs/imgs/screenshot_7.png" width="275px"><img src="./src/pkgs/imgs/screenshot_8.png" width="275px"><img src="./src/pkgs/imgs/screenshot_9.png" width="275px">
+	<img src="./src/pkgs/imgs/screenshot_10.png" width="275px"><img src="./src/pkgs/imgs/screenshot_11.png" width="275px"><img src="./src/pkgs/imgs/screenshot_12.png" width="275px">
+	<img src="./src/pkgs/imgs/screenshot_13.png" width="275px"><img src="./src/pkgs/imgs/screenshot_14.png" width="275px"><img src="./src/pkgs/imgs/screenshot_15.png" width="275px">
 </div>
 
 ## 使用

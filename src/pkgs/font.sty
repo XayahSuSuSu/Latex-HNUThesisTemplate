@@ -49,8 +49,8 @@
 }
 
 % 五号
-\newcommand\sizeFive{
-    \fontsize{10.5pt}{0}\selectfont
+\newcommand\sizeFive[1][0]{
+    \fontsize{10.5pt}{#1}\selectfont
 }
 
 % 小五
@@ -59,10 +59,13 @@
 }
 
 % Courier-PS-Bold
-\newfontfamily\fontCourierPSBold[Path=fonts/]{mCourier-PS-Bold.ttf}
+\newfontfamily\fontCourierPSBold[Path=fonts/]{mCourierPSBold.ttf}
 
 % 宋体
 \newCJKfontfamily\fontSimsun[Path=fonts/]{mSimsun.ttc}
+
+% 宋体 加粗
+\newCJKfontfamily\fontSimsunBold[Path=fonts/]{mSimsunBold.ttf}
 
 % 黑体
 \newCJKfontfamily\fontSimhei[Path=fonts/]{mSimhei.ttf}

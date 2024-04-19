@@ -1,0 +1,93 @@
+\RequirePackage{tocloft}
+\RequirePackage{hyperref}
+\RequirePackage{soul}
+
+\newcommand{\createTOC}{
+    \clearpage
+    \fancypagestyle{plain}{
+        \pagestyle{fancy}
+    }
+
+    % 目录标题布局
+    \setlength{\cftbeforetoctitleskip}{-0.65cm}
+    \setlength{\cftaftertoctitleskip}{0.65cm}
+    \setlength\cftbeforechapskip{1pt} % Chapter行间距
+
+    \renewcommand{\cftchapdotsep}{\cftdotsep} % Chapter点填充
+
+    \renewcommand{\cftchapfont}{\fontTimesNewRomanBold\fontSimhei\sizeFourl} % Chapter字体
+    \renewcommand{\cftchappagefont}{\fontTimesNewRoman\sizeFourl} % Chapter页码字体
+    \renewcommand{\cftsecfont}{\fontTimesNewRoman\fontSimsun\sizeFourl} % Section字体
+    \renewcommand{\cftsecpagefont}{\fontTimesNewRoman\sizeFourl} % Section页码字体
+    \renewcommand{\cftsubsecfont}{\fontTimesNewRoman\fontSimsun\sizeFourl} % Subsection字体
+    \renewcommand{\cftsubsecpagefont}{\fontTimesNewRoman\sizeFourl} % Subsection页码字体
+
+    \renewcommand{\contentsname}{
+        \fontSimhei\sizeThree{
+                {目~~~~~~~~~~~~~~录}
+        }
+    }
+    \begin{center}
+    \tableofcontents
+    \end{center}
+}
+
+\newcommand{\createLOF}{
+    \clearpage
+    \fancypagestyle{plain}{
+        \pagestyle{fancy}
+    }
+
+    \phantomsection\addcontentsline{toc}{chapter}{插~图~索~引}
+
+    % 插图索引标题布局
+    \setlength{\cftbeforeloftitleskip}{-0.65cm}
+    \setlength{\cftafterloftitleskip}{0.65cm}
+    \setlength{\cftfigindent}{0pt}
+
+    \renewcommand{\cftfigfont}{\fontTimesNewRoman\fontSimsun\sizeFourl} % 插图名称字体
+    \renewcommand{\cftfigpagefont}{\fontTimesNewRoman\sizeFourl} % 插图页码字体
+
+    % 设置插图名称前缀及长度
+    \renewcommand{\cftfigpresnum}{图~}
+    \setlength{\cftfignumwidth}{3em}
+
+    \renewcommand{\listfigurename}{
+        \fontSimhei\sizeThree{
+                {插~图~索~引}
+        }
+    }
+    \begin{center}
+    \listoffigures
+    \end{center}
+}
+
+\newcommand{\createLOT}{
+    \clearpage
+    \fancypagestyle{plain}{
+        \pagestyle{fancy}
+    }
+
+    \phantomsection\addcontentsline{toc}{chapter}{附~表~索~引}
+
+    % 附表索引标题布局
+    \setlength{\cftbeforelottitleskip}{-0.65cm}
+    \setlength{\cftafterlottitleskip}{0.65cm}
+    \setlength{\cfttabindent}{0pt}
+
+    \renewcommand{\cfttabfont}{\fontTimesNewRoman\fontSimsun\sizeFourl} % 附表名称字体
+    \renewcommand{\cfttabpagefont}{\fontTimesNewRoman\sizeFourl} % 附表页码字体
+
+    % 设置附表名称前缀及长度
+    \renewcommand{\cfttabpresnum}{表~}
+    \setlength{\cfttabnumwidth}{3em}
+
+    \renewcommand{\listtablename}{
+        \fontSimhei\sizeThree{
+                {附~表~索~引}
+        }
+    }
+    \begin{center}
+    \listoftables
+    \end{center}
+}

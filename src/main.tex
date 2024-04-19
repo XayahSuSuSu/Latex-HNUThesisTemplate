@@ -6,13 +6,45 @@
 \usepackage{graphicx}
 \usepackage{overpic}
 \usepackage{fontspec}
+\usepackage{multirow}
 \usepackage{pkgs/cover}
 \usepackage{pkgs/copyright}
+\usepackage{pkgs/tocloflot}
+\usepackage{pkgs/bibliography}
+\usepackage{pkgs/appendix}
 
 % Document
 \begin{document}
-    \createCover
+    \createCover % 封面
+
     \frontmatter
-    \createCopyright
+    \createCopyright % 版权
+
+    % ========================================摘要部分
     \input{docs/abstract}
+    % ========================================摘要部分
+
+    \createTOC % 目录
+    \createLOF % 插图索引
+    \createLOT % 附表索引
+
+    \mainmatter
+    % ========================================正文部分
+    \input{docs/chapters/chap1}
+    \input{docs/chapters/chap2}
+    % ========================================正文部分
+
+    % 参考文献
+    \createBibliography
+
+    % ========================================致谢部分
+    \input{docs/thanks}
+    % ========================================致谢部分
+
+    % 附录
+    \createAppendix
+    % ========================================附录部分
+    \input{docs/appendices/appendix1}
+    \input{docs/appendices/appendix2}
+    % ========================================附录部分
 \end{document}
