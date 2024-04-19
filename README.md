@@ -15,6 +15,24 @@
 </div>
 
 ## 使用
+### Overleaf（推荐）
+> TODO
+
+### 本地
+1. 安装[TeX Live 2024](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)
+2. 同步本仓库
+```
+git clone https://github.com/XayahSuSuSu/Latex-HNUThesisTemplate
+```
+3. 编译
+```
+cd Latex-HNUThesisTemplate/src
+mkdir ../out
+latexmk -xelatex -shell-escape main.tex -output-directory="../out"
+```
+4. 在`out`中找到`main.pdf`
+
+## 说明
 > TODO
 
 ## 开发
