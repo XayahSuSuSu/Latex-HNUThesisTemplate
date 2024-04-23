@@ -111,6 +111,10 @@
 \titleformat{\subsection}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesubsection}{1em}{}
 \titlespacing{\subsection}{0pt}{21pt}{4pt}
 
+% Subsubsection格式
+\titleformat{\subsubsection}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesubsubsection}{1em}{}
+\titlespacing{\subsubsection}{0pt}{21pt}{4pt}
+
 % 致谢预定义格式
 \newenvironment{newThanks}{
     \clearpage
