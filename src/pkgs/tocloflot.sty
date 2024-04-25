@@ -28,11 +28,12 @@
         }
     }
     \begin{center}
-    \tableofcontents
+        \tableofcontents
     \end{center}
 }
 
 \newcommand{\createLOF}{
+    \begingroup
     \clearpage
     \fancypagestyle{plain}{
         \pagestyle{fancy}
@@ -44,6 +45,9 @@
     \setlength{\cftbeforeloftitleskip}{-0.65cm}
     \setlength{\cftafterloftitleskip}{0.65cm}
     \setlength{\cftfigindent}{0pt}
+
+    % 移除不同章节之间的额外间隔
+    \renewcommand{\addvspace}[1]{}
 
     \renewcommand{\cftfigfont}{\fontTimesNewRoman\fontSimsun\sizeFourl} % 插图名称字体
     \renewcommand{\cftfigpagefont}{\fontTimesNewRoman\sizeFourl} % 插图页码字体
@@ -58,11 +62,13 @@
         }
     }
     \begin{center}
-    \listoffigures
+        \listoffigures
     \end{center}
+    \endgroup
 }
 
 \newcommand{\createLOT}{
+    \begingroup
     \clearpage
     \fancypagestyle{plain}{
         \pagestyle{fancy}
@@ -74,6 +80,9 @@
     \setlength{\cftbeforelottitleskip}{-0.65cm}
     \setlength{\cftafterlottitleskip}{0.65cm}
     \setlength{\cfttabindent}{0pt}
+
+    % 移除不同章节之间的额外间隔
+    \renewcommand{\addvspace}[1]{}
 
     \renewcommand{\cfttabfont}{\fontTimesNewRoman\fontSimsun\sizeFourl} % 附表名称字体
     \renewcommand{\cfttabpagefont}{\fontTimesNewRoman\sizeFourl} % 附表页码字体
@@ -88,6 +97,7 @@
         }
     }
     \begin{center}
-    \listoftables
+        \listoftables
     \end{center}
+    \endgroup
 }
