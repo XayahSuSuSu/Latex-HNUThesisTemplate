@@ -137,3 +137,6 @@
     labelsep=none,
     aboveskip=6pt,
 }
+
+% 参考文献以上标形式置于所引用内容最末句的右上角
+\renewcommand{\@cite}[1]{\textsuperscript{\,[#1]}}
