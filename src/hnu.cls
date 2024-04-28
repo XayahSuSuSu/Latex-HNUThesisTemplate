@@ -140,3 +140,18 @@
 
 % 参考文献以上标形式置于所引用内容最末句的右上角
 \renewcommand{\@cite}[1]{\textsuperscript{\,[#1]}}
+
+% 代码块预定义格式
+\RequirePackage{listings}
+\RequirePackage{xcolor}
+\lstset{
+    basicstyle=\footnotesize\fontJetBrainsMonoMedium,
+    breaklines=true,
+    frame=single,
+    backgroundcolor=\color{gray!10},
+    framexleftmargin=5pt,
+    framexrightmargin=5pt,
+    xleftmargin=10pt,
+    xrightmargin=10pt,
+    frameshape={RYR}{Y}{Y}{RYR}
+}
