@@ -16,8 +16,8 @@
     right=20mm,
 }
 
-% 行间距为1.5倍行距,
-\renewcommand{\baselinestretch}{1.6}
+% 行间距为1.5倍行距(1.5 * 1.2(latex默认) ÷ 1.3(word默认))
+\linespread{1.625}
 
 % 默认中文字体：宋体, 英文字体：Times New Roman
 \setmainfont[Path=fonts/]{mTimesNewRoman.ttf}
@@ -33,7 +33,6 @@
 }
 \fancyhead[C]{
     \sizeFivel \fontSimsun 湖南大学本科生毕业论文（设计）
-    \vspace{4pt}
 }
 \fancyhead[L]{}
 \fancyhead[R]{}
@@ -44,8 +43,9 @@
 }
 
 \renewcommand\frontmatter{
-    \topmargin -10mm
+    \topmargin -11mm
     \headsep 12mm
+    \footskip 6.5mm
     \pagenumbering{Roman}
 }
 
@@ -54,7 +54,7 @@
     \newpage
     \phantomsection\addcontentsline{toc}{chapter}{摘~~要}
     \begin{center}
-        \fontSimhei\sizeThreel[20]{
+        \fontSimhei\sizeThreel{
             \thesisTitle
 
 
@@ -80,7 +80,7 @@
     \newpage
     \phantomsection\addcontentsline{toc}{chapter}{A\hspace{0.1em}b\hspace{0.1em}s\hspace{0.1em}t\hspace{0.1em}r\hspace{0.1em}a\hspace{0.1em}c\hspace{0.1em}t}
     \begin{center}
-        \fontTimesNewRomanBold\sizeThreel[20]{
+        \fontTimesNewRomanBold\sizeThreel{
             \thesisTitleENG
         }
 
@@ -100,20 +100,21 @@
     \raggedright\fontTimesNewRomanBold\sizeFour Keywords: \fontTimesNewRomanBold\sizeFourl
 }
 
+% 章（如“1”）、节（如“1.1”）、条（如“1.1.1”）、款（如“1.”）、项（如“（1）”）
+% “节”、“条”的段前、段后各设为0.5行
 \RequirePackage{titlesec}
 % Chapter格式
 \titleformat{\chapter}{\fontTimesNewRomanBold\fontSimhei\sizeThree}{\thechapter}{1em}{}
-\titlespacing{\chapter}{0pt}{0pt}{4pt}
+\titlespacing{\chapter}{0pt}{0pt}{2pt}
 % Section格式
 \titleformat{\section}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesection}{1em}{}
-\titlespacing{\section}{0pt}{21pt}{4pt}
+\titlespacing{\section}{0pt}{7.5pt}{7.5pt}
 % Subsection格式
 \titleformat{\subsection}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesubsection}{1em}{}
-\titlespacing{\subsection}{0pt}{21pt}{4pt}
-
+\titlespacing{\subsection}{0pt}{7.5pt}{7.5pt}
 % Subsubsection格式
 \titleformat{\subsubsection}{\fontTimesNewRoman\fontSimhei\sizeFourl}{\thesubsubsection}{1em}{}
-\titlespacing{\subsubsection}{0pt}{21pt}{4pt}
+\titlespacing{\subsubsection}{0pt}{7.5pt}{7.5pt}
 
 % 致谢预定义格式
 \newenvironment{newThanks}{

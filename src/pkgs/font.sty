@@ -1,61 +1,63 @@
+\newcommand\mLineSkipLength{15pt}
+
 % 初号
 \newcommand\sizePrimary{
-    \fontsize{42pt}{0}\selectfont
+    \fontsize{42pt}{\mLineSkipLength}\selectfont
 }
 
 % 小初
 \newcommand\sizePrimaryl{
-    \fontsize{36pt}{0}\selectfont
+    \fontsize{36pt}{\mLineSkipLength}\selectfont
 }
 
 % 一号
 \newcommand\sizeOne{
-    \fontsize{26pt}{0}\selectfont
+    \fontsize{26pt}{\mLineSkipLength}\selectfont
 }
 
 % 小一
 \newcommand\sizeOnel{
-    \fontsize{24pt}{0}\selectfont
+    \fontsize{24pt}{\mLineSkipLength}\selectfont
 }
 
 % 二号
 \newcommand\sizeTwo{
-    \fontsize{22pt}{0}\selectfont
+    \fontsize{22pt}{\mLineSkipLength}\selectfont
 }
 
 % 小二
 \newcommand\sizeTwol{
-    \fontsize{18pt}{0}\selectfont
+    \fontsize{18pt}{\mLineSkipLength}\selectfont
 }
 
 % 三号
 \newcommand\sizeThree{
-    \fontsize{16pt}{0}\selectfont
+    \fontsize{16pt}{\mLineSkipLength}\selectfont
 }
 
 % 小三
-\newcommand\sizeThreel[1][0]{
-    \fontsize{15pt}{#1}\selectfont
+\newcommand\sizeThreel{
+    \fontsize{15pt}{\mLineSkipLength}\selectfont
 }
 
 % 四号
 \newcommand\sizeFour{
-    \fontsize{14pt}{0}\selectfont
+    \fontsize{14pt}{\mLineSkipLength}\selectfont
 }
 
 % 小四
 \newcommand\sizeFourl{
-    \fontsize{12pt}{0}\selectfont
+    \fontsize{12pt}{\mLineSkipLength}\selectfont
 }
 
 % 五号
-\newcommand\sizeFive[1][0]{
-    \fontsize{10.5pt}{#1}\selectfont
+\newcommand\sizeFive{
+    \fontsize{10.5pt}{\mLineSkipLength}\selectfont
 }
 
 % 小五
 \newcommand\sizeFivel{
-    \fontsize{9pt}{0}\selectfont
+    \fontsize{9pt}{\mLineSkipLength}\selectfont
 }
 
 % Courier-PS-Bold
@@ -72,6 +74,8 @@
 
 % 黑体 加粗
 \newCJKfontfamily\fontSimheiBold[Path=fonts/]{mSimheiBold.ttf}
+% 黑体 加粗 (非中文字符)
+\newfontfamily\fontSimheiBoldChar[Path=fonts/]{mSimheiBold.ttf}
 
 % Times New Roman
 \newfontfamily\fontTimesNewRoman[Path=fonts/]{mTimesNewRoman.ttf}
