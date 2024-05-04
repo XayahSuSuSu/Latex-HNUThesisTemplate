@@ -52,7 +52,10 @@
 
 ## 使用
 ### Overleaf（推荐）
-> TODO
+1. 下载[Releases](https://github.com/XayahSuSuSu/Latex-HNUThesisTemplate/releases)中的`Source code(zip)`
+2. 登录至[Overleaf主页](https://www.overleaf.com/project)
+3. 左侧**New Project - Upload Project**，导入下载的`zip`压缩包
+4. 上传成功后会自动进入工程页面，点击左侧**Menu - Compiler**，选择`XeLaTeX`，重新编译即可。
 
 ### 本地
 1. 安装[TeX Live 2024](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)
