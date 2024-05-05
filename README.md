@@ -3,7 +3,7 @@
 </div>
 
 # 湖南大学本科毕业论文LaTeX模板（大理类）
-[![License](https://img.shields.io/github/license/XayahSuSuSu/Latex-HNUThesisTemplate?color=ff69b4)](./LICENSE)
+[![License](https://img.shields.io/github/license/XayahSuSuSu/Latex-HNUThesisTemplate?color=ff69b4)](./LICENSE) [![GitHub release](https://img.shields.io/github/v/release/XayahSuSuSu/Latex-HNUThesisTemplate?color=orange)](https://github.com/XayahSuSuSu/Latex-HNUThesisTemplate/releases)
 
 ## 格式
 > 本模板像素级遵循[湖南大学2024年撰写规范（大理类）](./specification/撰写规范/撰写规范（大理类）.doc)以及[湖南大学2024年撰写规范样张（大理类）](./specification/撰写规范/撰写规范样张（大理类）.doc)中以下规范内容
@@ -37,6 +37,7 @@
 | 表底附注 | 小五号宋体 |
 | 插图标题 | 五号宋体加粗 |
 | 插图注释 | 小五号宋体 |
+| 参考文献 | GB/T 7714—2015 |
 
 ## 图例
 <div align="center">
@@ -72,9 +73,9 @@ latexmk -xelatex -shell-escape main.tex -output-directory="../out"
 4. 在`out`中找到`main.pdf`
 
 ## 说明
-* 1. 通常情况下只需要更改`src/docs/*`、`src/main.tex`、`src/main.tex`即可
+* 通常情况下只需要更改`src/docs/*`、`src/main.tex`、`src/main.tex`即可
 
-* 2. 若封面中的**论文(设计)题目**需要两行显示，可以直接修改`src/pkgs/cover.sty`，去掉`\thesisTitle`相关内容，再手动在表格中添加一行，例如：
+* 若封面中的**论文(设计)题目**需要两行显示，可以直接修改`src/pkgs/cover.sty`，去掉`\thesisTitle`相关内容，再手动在表格中添加一行，例如：
 ```
 % ......
 {\sizeTwol {
@@ -101,7 +102,7 @@ latexmk -xelatex -shell-escape main.tex -output-directory="../out"
 % ......
 ```
 
-* 3. 当且仅当`\chapter`与`\section`之间没有段落时，需要使用`\vspace{7pt}`手动调整间距，例如：
+* 当且仅当`\chapter`与`\section`之间没有段落时，需要使用`\vspace{7pt}`手动调整间距，例如：
 ```
 \chapter{绪论}
 \vspace{7pt}
@@ -110,6 +111,8 @@ latexmk -xelatex -shell-escape main.tex -output-directory="../out"
 \section{课题背景}
 ```
 
+## 参考文献
+本模板已默认启用**GB/T 7714—2015**标准，使用请参考[gbt7714-bibtex-style](https://github.com/zepinglee/gbt7714-bibtex-style)、[Package documentation](https://mirror-hk.koddos.net/CTAN/biblio/bibtex/contrib/gbt7714/gbt7714.pdf)
 
 ## 开发
 * [TeX Live 2024](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)
